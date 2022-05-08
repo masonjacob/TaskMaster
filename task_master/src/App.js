@@ -1,13 +1,20 @@
-import logo from './logo.svg';
+import React from 'react'
+import FullCalendar from '@fullcalendar/react' // must go before plugins
+import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 import './App.css';
-import Calendar from './components/Calendar'
 
 function App() {
   return (
-    <div className="App">
-      <Calendar />
-    </div>
-  );
+  <FullCalendar
+  plugins={[ dayGridPlugin ]}
+  initialView="dayGridMonth"
+  weekends={true}
+  events={[
+    { title: 'event 1', date: '2022-05-01', color: 'green', },
+    { title: 'event 2', date: '2022-05-02', color: 'red' }
+  ]}
+  />
+  )
 }
 
 export default App;
