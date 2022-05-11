@@ -22,7 +22,7 @@ function Calendar() {
 
   events={[
     { title: 'event 1', date: '2022-05-01', color: 'green', },
-    { title: 'event 2', date: '2022-05-02', color: 'red' }
+    { title: 'event 2', date: '2022-05-02', color: 'red', }
   ]}
   />
   )
