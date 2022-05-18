@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "task_master",
   "version": "0.1.0",
-  "homepage": "https://masonjacob.github.io/TaskMaster/task_master",
+  "homepage": "https://masonjacob.github.io/TaskMaster/",
   "private": true,
   "dependencies": {
     "@fullcalendar/bootstrap": "^5.11.0",
@@ -26,7 +26,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
